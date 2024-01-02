@@ -14,26 +14,24 @@ def create_file_with_timestamp():
     try:
         # Get the current timestamp
         current_time = datetime.datetime.now()
-        
-        # Format the timestamp as a string
-        timestamp_str = current_time.strftime("%Y-%m-%d_%H-%M-%S")
-        
-        # Create a filename based on the timestamp
-        filename = f"file_{timestamp_str}.txt"
-        
-        # Open the file in write mode
-        with open(filename, "w") as file:
-            # Write the timestamp into the file
-            file.write(f"Timestamp: {timestamp_str}")
-        
+
+        # Print the current timestamp
         print()
-        print(f"File '{filename}' created successfully with the timestamp!!!")
+        print("Current Timestamp:", current_time)
+
+        # Open the file in write mode using the 'with' statement
+        with open("timenow.txt", 'w') as file:
+            # Write the current timestamp as a string into the file
+            file.write(str(current_time))
+
         print()
-    
+        print("File 'timenow.txt' created successfully.")
+
     except Exception as e:
+        # Handle any exceptions that may occur during file creation
         print(f"An error occurred: {e}")
 
-# Call the function to create the file
+# Call the function to create the file with the current timestamp
 create_file_with_timestamp()
 
 
