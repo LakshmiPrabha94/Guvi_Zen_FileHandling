@@ -1,0 +1,27 @@
+Sample Text File for File Handling Concepts
+
+1. File Opening Modes:
+   - 'r': Read mode
+   - 'w': Write mode
+   - 'a': Append mode
+   - 'b': Binary mode
+
+2. Context Manager ('with' Statement):
+   - Ensures proper file closure
+   - Automatically handles exceptions
+
+3. Reading from a File:
+   - read(): Reads entire content
+   - readline(): Reads a single line
+   - readlines(): Reads all lines into a list
+
+4. Writing to a File:
+   - write(): Writes content to the file
+   - append(): Appends content to an existing file
+
+5. Exception Handling:
+   - Handling FileNotFoundError
+   - Handling general exceptions
+
+6. Context Manager for File Iteration:
+   - Iterating through lines using 'for' loop
